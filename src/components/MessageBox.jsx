@@ -29,7 +29,7 @@ function MessageBox({ conversaction, setOnlineUserList }) {
     }, [conversaction._id]);
 
     useEffect(() => {
-        socket.current = io('http://localhost:5001');
+        socket.current = io('https://chat-app-socket-blue.vercel.app/');
         socket.current.on('getMessage', (data) => {
             setMessagesSocket(data);
         });

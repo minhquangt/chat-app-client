@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const axiosClient = axios.create({
-    baseURL: 'http://localhost:5000/api',
+    baseURL: 'https://chat-app-server-peach-theta.vercel.app/api',
 });
 
 export default axiosClient;
